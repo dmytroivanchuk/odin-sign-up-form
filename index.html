@@ -6,5 +6,55 @@
     <link rel="stylesheet" href="style.css" />
     <title>Sign-up form</title>
   </head>
-  <body></body>
+  <body>
+    <aside>
+      <div class="logo-container">
+        <img
+          class="logo"
+          src="images/odin-logo.png"
+          alt="The Odin Project logo"
+        />
+        <h1>Odin</h1>
+      </div>
+      <p class="caption">
+        Photo by <a href="#">Halie West</a> on <a href="#">Unsplash</a>
+      </p>
+    </aside>
+    <main>
+      <div class="description">
+        <p>
+          This is not a ral online service! You know you need something like
+          this in your life to help you realize your deepest dreams. Sign up
+          <em>now</em> to get started.
+        </p>
+        <p>You <em>know</em> you want to.</p>
+      </div>
+      <form id="form">
+        <p>Let's do this!</p>
+        <fieldset>
+          <label for="first-name">First Name</label>
+          <input type="text" id="first-name" name="first-name" required />
+          <label for="last-name">Last Name</label>
+          <input type="text" id="last-name" name="last-name" required />
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+          <label for="phone-number">Phone Number</label>
+          <input type="tel" id="phone-number" name="phone-number" />
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required />
+          <label for="confirm-password">Confirm Password</label>
+          <input
+            type="password"
+            id="confirm-password"
+            name="confirm-password"
+            required
+          />
+        </fieldset>
+      </form>
+      <div class="authentication">
+        <button type="submit" form="form">Create Account</button>
+        <p>Already have an account? <a href="#">Log in</a></p>
+      </div>
+    </main>
+  </body>
 </html>

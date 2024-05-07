@@ -45,6 +45,7 @@ aside {
   margin-bottom: 2%;
   font-size: 0.9rem;
   opacity: 70%;
+
   > a {
     text-decoration: underline solid white 5%;
   }
@@ -52,6 +53,23 @@ aside {
 
 main {
   width: 65%;
+  display: flex;
+  flex-direction: column;
+}
+
+.description {
+  background-color: #f9fafb;
+  padding: 8rem 2.5rem 3.5rem;
+
+  p:first-of-type {
+    margin-bottom: 1.5rem;
+  }
+
+  > p {
+    max-inline-size: 45ch;
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
 }
 
 button {

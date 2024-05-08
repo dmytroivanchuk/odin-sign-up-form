@@ -46,7 +46,7 @@ aside {
   font-size: 0.9rem;
   opacity: 70%;
 
-  > a {
+  a {
     text-decoration: underline solid white 5%;
   }
 }
@@ -65,17 +65,62 @@ main {
     margin-bottom: 1.5rem;
   }
 
-  > p {
-    max-inline-size: 45ch;
+  p {
+    max-width: 45ch;
     font-size: 1.3rem;
     font-weight: 600;
   }
 }
 
-button {
-  background-color: #596d48;
+#form {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2.5rem 3rem;
+  height: 35%;
+  box-shadow: 0rem 0.3rem 0.3rem #e5e7eb;
+
+  & p {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+
+  & fieldset {
+    flex: 1;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    max-width: 55ch;
+
+    & .field {
+      display: flex;
+      flex-direction: column;
+
+      & label {
+        font-size: 0.7rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+      }
+
+      & input {
+        width: 24ch;
+        height: 2rem;
+        border-radius: 0.3rem;
+        text-indent: 0.5rem;
+        border: 1px solid #e5e7eb;
+
+        &:focus-visible {
+          outline: 1px solid blue;
+          box-shadow: 0.3rem 0.3rem 0.2rem #e5e7eb;
+        }
+      }
+    }
+  }
 }
 
-input {
-  border: 1px solid #e5e7eb;
+button {
+  background-color: #596d48;
 }

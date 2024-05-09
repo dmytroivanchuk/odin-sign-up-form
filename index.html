@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
     <title>Sign-up form</title>
   </head>
   <body>
@@ -23,34 +24,39 @@
     <main>
       <div class="description">
         <p>
-          This is not a ral online service! You know you need something like
+          This is not a real online service! You know you need something like
           this in your life to help you realize your deepest dreams.<br />Sign
           up <em>now</em> to get started.
         </p>
         <p>You <em>know</em> you want to.</p>
       </div>
-      <form id="form">
+      <form id="form" novalidate>
         <p>Let's do this!</p>
         <fieldset>
           <div class="field">
             <label for="first-name">First Name</label>
             <input type="text" id="first-name" name="first-name" required />
+            <p class="error" aria-live="polite">Error</p>
           </div>
           <div class="field">
             <label for="last-name">Last Name</label>
             <input type="text" id="last-name" name="last-name" required />
+            <p class="error" aria-live="polite">Error</p>
           </div>
           <div class="field">
             <label for="email">Email</label>
             <input type="email" id="email" name="email" required />
+            <p class="error" aria-live="polite">Error</p>
           </div>
           <div class="field">
             <label for="phone-number">Phone Number</label>
             <input type="tel" id="phone-number" name="phone-number" />
+            <p class="error" aria-live="polite">Error</p>
           </div>
           <div class="field">
             <label for="password">Password</label>
             <input type="password" id="password" name="password" required />
+            <p class="error" aria-live="polite">Error</p>
           </div>
           <div class="field">
             <label for="confirm-password">Confirm Password</label>
@@ -60,6 +66,7 @@
               name="confirm-password"
               required
             />
+            <p class="error" aria-live="polite">Error</p>
           </div>
         </fieldset>
       </form>

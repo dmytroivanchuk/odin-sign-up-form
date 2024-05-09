@@ -1,11 +1,3 @@
-// const form = document.querySelector("#form");
-// const firstName = document.querySelector("#first-name");
-// const lastName = document.querySelector("#last-name");
-// const email = document.querySelector("#email");
-// const phoneNumber = document.querySelector("#phone-number");
-// const password = document.querySelector("#password");
-// const confirmPassword = document.querySelector("#confirm-password");
-
 const form = document.querySelector("#form");
 const inputs = document.querySelectorAll("#form input");
 

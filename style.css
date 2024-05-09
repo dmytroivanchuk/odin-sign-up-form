@@ -76,8 +76,8 @@ main {
 #form {
   display: flex;
   flex-direction: column;
-  padding: 1rem 2.5rem 3rem;
-  height: 37%;
+  padding: 1rem 2.5rem 2rem;
+  height: 20rem;
   box-shadow: 0rem 0.3rem 0.3rem #e5e7eb;
 
   & > p {
@@ -87,8 +87,8 @@ main {
   }
 
   & fieldset {
+    height: 100%;
     flex: 1;
-    height: max-content;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -136,6 +136,22 @@ main {
   }
 }
 
-button {
-  background-color: #596d48;
+.authentication {
+  flex: 1;
+  background-color: #f9fafb;
+  padding: 2rem 2.5rem 0;
+
+  & button {
+    background-color: #596d48;
+    color: white;
+    padding: 0.7rem 3rem;
+    font-weight: 600;
+    border-radius: 0.3rem;
+    margin-bottom: 2rem;
+  }
+
+  & a {
+    color: #596d48;
+    font-weight: 600;
+  }
 }
